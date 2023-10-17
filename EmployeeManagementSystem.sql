@@ -19,6 +19,23 @@ CREATE TABLE JobDepartment (
     salary_range VARCHAR(30)
 );
 
+INSERT INTO JobDepartment(Dept_ID,Dept_name,tot_emp,salary_range)
+VALUES
+(1001, 'Human Resources', 50, 50000),
+(1002, 'Information Technology', 60, 50000),
+(1003, 'Marketing', 40, 60000),
+(1004, 'Finance', 50, 40000),
+(1005, 'sales', 100, 30000),
+(1006, 'Operations', 30, 40000),
+(1007, 'Accounting', 50, 45000),
+(1008, 'Custom Service', 45, 40000),
+(1009, 'Product Development', 20, 56000),
+(1010, 'Research and Development', 25, 60000);
+
+SELECT * FROM JobDepartment;
+
+DELETE FROM JobDepartment;
+
 INSERT INTO Employee (emp_ID, first_name, last_name, gender, age, contact_add, dob)
 VALUES
 (1001, 'Susmita', 'Baker', 'F', 27, 'Uttara', '1996-09-18'),
@@ -33,3 +50,4 @@ VALUES
 (1010, 'Dev', 'Barua', 'M', 25, 'Tongi', '1998-02-12');
 
 SELECT * FROM Employee;
+
